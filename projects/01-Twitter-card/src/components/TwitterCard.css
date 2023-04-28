@@ -1,0 +1,70 @@
+* {
+  font-family: Helvetica;
+  color: #eee;
+  box-sizing: border-box;
+}
+.tw-user-info-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  gap: 10px;
+  height: 70px;
+  width: 400px;
+  justify-content: space-around;
+}
+.tw-user-info-card > img {
+  height: 90%;
+  border-radius: 100%;
+}
+
+.tw-user-info-card > div {
+  width: 60%;
+}
+
+.tw-user-info-card > div > h4 {
+  margin: 0;
+  font-weight: bold;
+}
+
+.tw-user-info-card > div > strong {
+  margin: 0;
+  font-weight: lighter;
+  color: #aaa;
+}
+
+.tw-user-info-card-following {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:5px 10px;
+  border-radius: 100px;
+  font-weight: bolder;
+  width: 20%;
+  height: 29px;
+  transition: .3s ease background-color;
+}
+.tw-user-info-card-following:hover {
+  background-color: #aaa;
+}
+.tw-user-info-card-following-true {
+  width: 40%;
+  transition: 0s ease background-color;
+}
+.tw-user-info-card-following-true:hover {
+  border: 1px solid #d22;
+  background-color: #9116;
+}
+.tw-user-info-card-following-true:hover > :first-child {
+  display: none;
+}
+.tw-user-info-card-following-true:hover > :last-child {
+  display: block;
+  color: #d22;
+}
+.tw-user-info-card-following > strong {
+  color: #222;
+}
+.tw-stop-following {
+  display: none;
+}
